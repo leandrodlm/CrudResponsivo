@@ -1,0 +1,18 @@
+<a class="waves-effect waves-light btn right" ui-sref="newUser"><i class="material-icons left">send</i>Adicionar funcionário</a>
+<table class="table usertable">
+    <tr>
+        <td><h3>Funcionários cadastrados</h3></td>
+        <td></td>
+    </tr>
+    <div class="row">
+      <tr ng-repeat="user in users">
+          <td class="col s12 m2 l2 xl2">{{user.nome}}</td>
+          <td class="col s12 m2 l2 xl2">{{user.email}}</td>
+          <td class="col s12 m2 l2 xl2">{{user.cargo}}</td>
+          <td class="col s12 m6 l6 xl6">
+              <a class="waves-effect waves-light btn" ui-sref="viewUser({id:user._id})"><i class="material-icons left">perm_identity</i>Visualizar</a>
+              <a class="waves-effect red btn" ng-click="deleteUser(user)"><i class="material-icons left">delete</i>Remover</a>
+          </td>
+      </tr>
+    </div>
+</table>

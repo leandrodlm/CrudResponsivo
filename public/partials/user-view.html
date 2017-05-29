@@ -1,0 +1,32 @@
+<div class="row">
+  <table class="table usertable">
+      <tr class="s12 l12 m12 xl12">
+          <td><h3>Detalhes de {{user.nome}}</h3></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td class="s12 l6">Nome do funcionário</td>
+          <td class="s12 l6">{{user.nome}}</td>
+      </tr>
+      <tr>
+          <td class="s12 l6">Email</td>
+          <td class="s12 l6">{{user.email}}</td>
+      </tr>
+      <tr>
+          <td class="s12 l6">Idade</td>
+          <td class="s12 l6">{{user.idade}}</td>
+      </tr>
+      <tr>
+          <td class="s12 l6">Cargo</td>
+          <td class="s12 l6">{{user.cargo}}</td>
+      </tr>
+      <tr>
+          <td class="s12 l6">Telefone</td>
+          <td class="s12 l6">{{user.telefone}}</td>
+      </tr>
+  </table>
+
+  <div>
+      <a class="waves-effect waves-light btn" ui-sref="editUser({id:user._id})"><i class="material-icons left">mode_edit</i>Editar dados</a>
+  </div>
+</div>
